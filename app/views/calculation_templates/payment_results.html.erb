@@ -1,0 +1,21 @@
+<body>
+  <div class="result_banner">
+    <h1>Payment Results </h1>
+  </div>
+
+    <div class="result_buttons">
+      <div class="result_wrapper">
+        <dl>
+          <dt> APR: </dt> 
+          <dd> <%= @num_apr %> </dd> 
+          <dt> Number of years: </dt> 
+          <dd> <%= @num_years %> </dd> 
+          <dt> Principal: </dt> 
+          <dd> <%= @num_principal.to_s(:currency) %> </dd> 
+          <dt>Monthly Payment: </dt>
+          <dd> <%= @monthly_payment.to_s(:currency) %> </dd>
+        </dl>
+      <a href="/payment/new">Calculate another payment</a>
+    </div>
+  </div>
+</body>
